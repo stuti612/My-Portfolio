@@ -167,90 +167,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-20 px-6">
-        <div className="container max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Skills & <span className="gradient-text">Tech Stack</span>
-          </h2>
-          <p className="text-muted-foreground mb-12 text-lg">Comprehensive expertise across the full technology spectrum</p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="glass p-6 hover:glow-primary transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Code2 className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">Languages</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.languages.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-
-            <Card className="glass p-6 hover:glow-secondary transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Code2 className="h-6 w-6 text-secondary group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">Frontend</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.frontend.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-
-            <Card className="glass p-6 hover:glow-accent transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Database className="h-6 w-6 text-accent group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">Backend</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.backend.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-
-            <Card className="glass p-6 hover:glow-primary transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Cloud className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">Data Engineering & Cloud</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.cloud.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-
-            <Card className="glass p-6 hover:glow-secondary transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Brain className="h-6 w-6 text-secondary group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">AI & ML</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.ai.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-
-            <Card className="glass p-6 hover:glow-accent transition-all duration-300 group">
-              <div className="flex items-center gap-3 mb-4">
-                <Code2 className="h-6 w-6 text-accent group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold">Tools & Concepts</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {[...skills.tools, ...skills.concepts].map((skill) => (
-                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
-                ))}
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6">
         <div className="container max-w-6xl mx-auto">
@@ -361,6 +277,90 @@ const Index = () => {
               <p className="text-foreground/90">
                 <span className="font-semibold">CGPA:</span> 3.6 / 4.0
               </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-6">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Skills & <span className="gradient-text">Tech Stack</span>
+          </h2>
+          <p className="text-muted-foreground mb-12 text-lg">Comprehensive expertise across the full technology spectrum</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="glass p-6 hover:glow-primary transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Code2 className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">Languages</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.languages.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="glass p-6 hover:glow-secondary transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Code2 className="h-6 w-6 text-secondary group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">Frontend</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.frontend.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="glass p-6 hover:glow-accent transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Database className="h-6 w-6 text-accent group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">Backend</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.backend.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="glass p-6 hover:glow-primary transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Cloud className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">Data Engineering & Cloud</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.cloud.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="glass p-6 hover:glow-secondary transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Brain className="h-6 w-6 text-secondary group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">AI & ML</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.ai.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="glass p-6 hover:glow-accent transition-all duration-300 group">
+              <div className="flex items-center gap-3 mb-4">
+                <Code2 className="h-6 w-6 text-accent group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold">Tools & Concepts</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[...skills.tools, ...skills.concepts].map((skill) => (
+                  <Badge key={skill} variant="secondary" className="glass">{skill}</Badge>
+                ))}
+              </div>
             </Card>
           </div>
         </div>
